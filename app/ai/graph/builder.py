@@ -22,11 +22,14 @@ def route_retrieval(state: ComplianceState) -> str:
     faqs = state.get("retrieved_faqs", [])
     if not faqs:
         return "fallback"
-    
-    # If high overlap score (>= configured threshold), return directly without burning tokens
-    if state.get("best_match_score", 0.0) >= settings.direct_hit_threshold:
+
+    top_source = str(faqs[0].get("source") or "").lower()
+    is_pdf_chunk = ".pdf" in top_source or (faqs[0].get("id") or 0) > 100
+
+    # Only curated seed FAQs can bypass LLM via direct_return; raw PDF chunks always go to LLM synthesizer
+    if not is_pdf_chunk and state.get("best_match_score", 0.0) >= settings.direct_hit_threshold:
         return "direct_return"
-    
+
     return "synthesizer"
 
 

@@ -49,6 +49,8 @@ class Settings(BaseSettings):
         "cricket", "ipl", "recipe", "movie", "football", "song", "lyrics",
         "weather", "horoscope", "joke", "poem", "story", "python code",
         "javascript", "react code", "write code", "hack", "bitcoin price",
+        "today date", "todays date", "today's date", "current time", "birthday",
+        "celebrity", "actor", "actress", "cooking", "gaming", "astrology",
     ]
 
     # Smalltalk / Conversational Vocabulary (handled locally at 0 LLM token cost)

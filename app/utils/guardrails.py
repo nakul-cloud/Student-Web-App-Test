@@ -14,6 +14,14 @@ _INJECTION_PATTERNS = [
     r"bypass\s+(safety|guardrails|rules)",
 ]
 
+_OFFTOPIC_PATTERNS = [
+    r"\b(today'?s?|current|present)\s+(date|time|day|year)\b",
+    r"\bwhat\s+(is\s+)?(the\s+)?(today|date|time|day)\b",
+    r"\bwhat\s+day\s+is\s+(it|today)\b",
+    r"\bcalculate\s+[\d\+\-\*\/]+",
+    r"\bwho\s+(is|was)\s+(the\s+)?(president|prime\s+minister|king|queen|ceo\s+of\s+google)\b",
+]
+
 
 def is_gibberish(text: str) -> bool:
     """
@@ -70,7 +78,12 @@ def check_guardrails(text: str) -> tuple[bool, str]:
         if re.search(pattern, lower):
             return True, "prompt_injection"
 
-    # 2. Off-topic keyword check from settings
+    # 2. Off-topic general assistant pattern check (e.g. today's date/time)
+    for pattern in _OFFTOPIC_PATTERNS:
+        if re.search(pattern, lower):
+            return True, "out_of_scope"
+
+    # 3. Off-topic keyword check from settings
     words = set(re.split(r"\W+", lower))
     for kw in settings.blocked_offtopic_keywords:
         if (" " in kw and kw in lower) or (kw in words):
