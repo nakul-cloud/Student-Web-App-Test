@@ -1,0 +1,374 @@
+[
+  {
+    "id": 1,
+    "category": "Tax & Incentives",
+    "question": "What is the income tax holiday available for units in GIFT City IFSC?",
+    "answer": "Under Section 80LA of the Income Tax Act, 1961, approved units in GIFT City IFSC are eligible for a 100% income tax deduction for any 10 consecutive years out of a 15-year block from the year of commencement of operations.",
+    "source": "Income Tax Act 1961, Section 80LA & IFSCA Circular 2021",
+    "keywords": [
+      "income tax",
+      "tax holiday",
+      "80LA",
+      "10 years",
+      "deduction",
+      "tax exemption",
+      "holiday"
+    ]
+  },
+  {
+    "id": 2,
+    "category": "Tax & Incentives",
+    "question": "What is the Minimum Alternate Tax (MAT) rate for units in GIFT City IFSC?",
+    "answer": "Units set up in GIFT City IFSC enjoy a highly concessional Minimum Alternate Tax (MAT) rate of 9% (under Section 115JB) on book profits, compared to the standard domestic rate of 15%. For companies opting for the new tax regime, MAT is not applicable.",
+    "source": "Income Tax Act 1961, Section 115JB & Finance Act Amendments",
+    "keywords": [
+      "minimum alternate tax",
+      "MAT",
+      "9%",
+      "115JB",
+      "corporate tax",
+      "book profits"
+    ]
+  },
+  {
+    "id": 3,
+    "category": "Tax & Incentives",
+    "question": "Are financial transactions in GIFT IFSC subject to Goods and Services Tax (GST)?",
+    "answer": "Services provided by units located in GIFT City IFSC to overseas clients, or to other IFSC units, or approved transactions on IFSC exchanges, are categorized as zero-rated supply, meaning 0% GST applies.",
+    "source": "CGST Act, Integrated GST (IGST) Export Rules & IFSC Notifications",
+    "keywords": [
+      "goods and services tax",
+      "GST",
+      "zero rated",
+      "0% gst",
+      "indirect tax",
+      "tax on fees"
+    ]
+  },
+  {
+    "id": 4,
+    "category": "Tax & Incentives",
+    "question": "Is Securities Transaction Tax (STT) or Commodity Transaction Tax (CTT) applicable on IFSC exchanges?",
+    "answer": "No. Transactions conducted on international stock exchanges located in GIFT City IFSC (such as India INX and NSE IX) are completely exempt from Securities Transaction Tax (STT), Commodity Transaction Tax (CTT), and Stamp Duty.",
+    "source": "Finance Act Special Provisions for IFSC Exchanges",
+    "keywords": [
+      "securities transaction tax",
+      "STT",
+      "CTT",
+      "stamp duty",
+      "trading tax",
+      "stock exchange"
+    ]
+  },
+  {
+    "id": 5,
+    "category": "Tax & Incentives",
+    "question": "What is the withholding tax (TDS) on interest paid to non-residents by IFSC units?",
+    "answer": "Under Section 194LC of the Income Tax Act, interest payments made to non-residents on monies borrowed or bonds/notes listed on IFSC exchanges are subject to a concessional withholding tax of only 4% or 9% depending on the instrument type and issuance date.",
+    "source": "Income Tax Act, Section 194LC & CBDT Clarification",
+    "keywords": [
+      "withholding tax",
+      "TDS",
+      "interest payment",
+      "194LC",
+      "non resident tax",
+      "borrowing"
+    ]
+  },
+  {
+    "id": 6,
+    "category": "Entity Setup & Licensing",
+    "question": "Who is the unified regulatory authority for GIFT City IFSC?",
+    "answer": "The International Financial Services Centres Authority (IFSCA), established under the IFSCA Act, 2019, is the single unified statutory regulator with powers formerly distributed across RBI, SEBI, IRDAI, and PFRDA.",
+    "source": "IFSCA Act, 2019 (Act No. 50 of 2019)",
+    "keywords": [
+      "regulator",
+      "unified regulator",
+      "IFSCA",
+      "IFSCA Act",
+      "who regulates",
+      "authority",
+      "SEBI RBI"
+    ]
+  },
+  {
+    "id": 7,
+    "category": "Entity Setup & Licensing",
+    "question": "What is an IFSC Banking Unit (IBU) and how is it formed?",
+    "answer": "An IFSC Banking Unit (IBU) is an offshore branch of an Indian or foreign bank set up in GIFT City under IFSCA Banking Regulations, 2020. It must maintain a minimum capital of USD 20 million (or regulatory capital allocated by the parent bank) and operates as a non-resident branch in foreign currency.",
+    "source": "IFSCA (Banking) Regulations, 2020",
+    "keywords": [
+      "IFSC Banking Unit",
+      "IBU",
+      "banking license",
+      "minimum capital",
+      "foreign bank branch",
+      "USD 20 million"
+    ]
+  },
+  {
+    "id": 8,
+    "category": "Entity Setup & Licensing",
+    "question": "What are the registration requirements for a Fund Management Entity (FME) in GIFT City?",
+    "answer": "Under IFSCA (Fund Management) Regulations, 2022, entities must register in one of three tracks: Authorized FME (investing in unlisted securities/family offices, min capital USD 75k), Registered FME Non-Retail (PE/VC funds, min capital USD 500k), or Registered FME Retail (mutual funds, min capital USD 1M).",
+    "source": "IFSCA (Fund Management) Regulations, 2022",
+    "keywords": [
+      "fund management entity",
+      "FME",
+      "AIF",
+      "private equity",
+      "venture capital",
+      "capital requirement",
+      "retail non-retail"
+    ]
+  },
+  {
+    "id": 9,
+    "category": "Entity Setup & Licensing",
+    "question": "What is the dual-approval process to start operations in GIFT City IFSC?",
+    "answer": "An applicant requires two approvals: (1) Provisional in-principle or final regulatory license from the IFSCA, and (2) Letter of Approval (LoA) from the Development Commissioner of the GIFT Special Economic Zone (SEZ) under the SEZ Act, 2005.",
+    "source": "SEZ Act 2005 & IFSCA Coordinated Onboarding Procedure",
+    "keywords": [
+      "dual approval",
+      "how to set up",
+      "SEZ approval",
+      "Letter of Approval",
+      "LoA",
+      "application process",
+      "steps"
+    ]
+  },
+  {
+    "id": 10,
+    "category": "Entity Setup & Licensing",
+    "question": "Can an Indian domestic company set up a subsidiary in GIFT City IFSC?",
+    "answer": "Yes. Indian resident companies can set up wholly owned subsidiaries or joint ventures in GIFT IFSC under the Overseas Direct Investment (ODI) / Overseas Investment (OI) Rules, 2022, administered jointly by RBI and IFSCA.",
+    "source": "Foreign Exchange Management (Overseas Investment) Rules, 2022",
+    "keywords": [
+      "Indian company",
+      "subsidiary",
+      "overseas investment",
+      "ODI rules",
+      "resident setup"
+    ]
+  },
+  {
+    "id": 11,
+    "category": "AML & KYC Compliance",
+    "question": "What AML/CFT framework governs regulated entities in GIFT City IFSC?",
+    "answer": "Entities in GIFT IFSC are governed by the IFSCA (Anti Money Laundering, Counter-Terrorist Financing and Know Your Customer) Guidelines, 2022, aligned with Financial Action Task Force (FATF) global standards and the Prevention of Money Laundering Act (PMLA), 2002.",
+    "source": "IFSCA AML/CFT and KYC Guidelines, 2022",
+    "keywords": [
+      "anti money laundering",
+      "AML",
+      "CFT",
+      "KYC",
+      "PMLA",
+      "FATF",
+      "compliance guidelines"
+    ]
+  },
+  {
+    "id": 12,
+    "category": "AML & KYC Compliance",
+    "question": "What is the requirement for appointing a Compliance Officer and Principal Officer under IFSCA AML rules?",
+    "answer": "Every IFSCA registered financial institution must designate a senior management person as the 'Principal Officer' responsible for AML monitoring and reporting to FIU-IND, along with a qualified 'Designated Director' to ensure overall compliance oversight.",
+    "source": "IFSCA AML/CFT Guidelines Section 6 (Internal Controls)",
+    "keywords": [
+      "principal officer",
+      "compliance officer",
+      "designated director",
+      "FIU-IND",
+      "reporting officer"
+    ]
+  },
+  {
+    "id": 13,
+    "category": "AML & KYC Compliance",
+    "question": "What is the Customer Due Diligence (CDD) and Beneficial Ownership threshold in GIFT City?",
+    "answer": "Regulated entities must perform CDD prior to onboarding. For legal entities, any individual owning or controlling more than 10% (for companies and trusts) or 15% (for partnerships/unincorporated associations) must be verified as the Ultimate Beneficial Owner (UBO).",
+    "source": "IFSCA KYC Master Circular & PMLA Rules 2023 Amendment",
+    "keywords": [
+      "customer due diligence",
+      "CDD",
+      "beneficial ownership",
+      "UBO",
+      "10 percent",
+      "KYC threshold"
+    ]
+  },
+  {
+    "id": 14,
+    "category": "AML & KYC Compliance",
+    "question": "What are the Suspicious Transaction Report (STR) filing deadlines in IFSC?",
+    "answer": "Regulated entities must submit Suspicious Transaction Reports (STRs) to the Financial Intelligence Unit - India (FIU-IND) via the FINnet portal within 7 working days of arriving at a conclusion that a transaction or attempted transaction is suspicious.",
+    "source": "PMLA (Maintenance of Records) Rules & FIU-IND IFSC Circular",
+    "keywords": [
+      "suspicious transaction report",
+      "STR",
+      "FIU-IND",
+      "FINnet",
+      "reporting deadline",
+      "7 days"
+    ]
+  },
+  {
+    "id": 15,
+    "category": "AML & KYC Compliance",
+    "question": "How long must client KYC and transaction records be retained by IFSC units?",
+    "answer": "In accordance with IFSCA AML Guidelines and Section 12 of PMLA, all customer identification and transaction records must be safely preserved for at least 5 years from the date of cessation of the business relationship or completion of the transaction.",
+    "source": "IFSCA AML/CFT Guidelines Section 14 (Record Retention)",
+    "keywords": [
+      "record retention",
+      "how long to keep",
+      "5 years",
+      "preservation of records",
+      "audit trail"
+    ]
+  },
+  {
+    "id": 16,
+    "category": "Banking & Forex",
+    "question": "What currencies are permitted for business transactions in GIFT City IFSC?",
+    "answer": "All business in GIFT City IFSC is conducted in designated foreign currencies, primarily USD, EUR, GBP, JPY, CAD, AUD, and SGD. Indian Rupee (INR) is only permitted for domestic administrative/salary expenses through designated special accounts.",
+    "source": "IFSCA (Banking) Regulations 2020 & FEMA IFSC Notifications",
+    "keywords": [
+      "permitted currency",
+      "currencies",
+      "USD",
+      "foreign currency",
+      "INR allowed",
+      "forex"
+    ]
+  },
+  {
+    "id": 17,
+    "category": "Banking & Forex",
+    "question": "Can Indian resident individuals open bank accounts in GIFT City IFSC?",
+    "answer": "Yes. Under RBI's Liberalised Remittance Scheme (LRS), resident individuals can remit up to USD 250,000 per financial year to open foreign currency accounts with IFSC Banking Units in GIFT City for permissible investments and education expenses.",
+    "source": "RBI A.P. (DIR Series) Circular No. 11 & LRS IFSC Guidelines",
+    "keywords": [
+      "resident individual",
+      "savings account",
+      "bank account",
+      "LRS",
+      "liberalised remittance",
+      "USD 250000"
+    ]
+  },
+  {
+    "id": 18,
+    "category": "Banking & Forex",
+    "question": "What is the regulatory status of GIFT City IFSC under Indian Foreign Exchange Management Act (FEMA)?",
+    "answer": "Under FEMA, a unit in GIFT City IFSC is treated as a person resident outside India (deemed non-resident territory for foreign exchange purposes). Transactions between an IFSC unit and a domestic Indian entity are treated as cross-border transactions.",
+    "source": "FEMA (International Financial Services Centre) Regulations, 2015",
+    "keywords": [
+      "FEMA",
+      "non-resident",
+      "deemed foreign territory",
+      "cross-border",
+      "offshore status"
+    ]
+  },
+  {
+    "id": 19,
+    "category": "Banking & Forex",
+    "question": "Are IFSC Banking Units subject to Cash Reserve Ratio (CRR) and Statutory Liquidity Ratio (SLR)?",
+    "answer": "No. Liabilities of IFSC Banking Units (IBUs) in foreign currencies are exempt from domestic RBI Cash Reserve Ratio (CRR) and Statutory Liquidity Ratio (SLR) requirements, drastically improving their lending cost competitiveness.",
+    "source": "IFSCA Banking Regulations & RBI Master Direction - IFSC",
+    "keywords": [
+      "CRR",
+      "SLR",
+      "cash reserve ratio",
+      "statutory liquidity",
+      "reserve requirements",
+      "exemption"
+    ]
+  },
+  {
+    "id": 20,
+    "category": "Banking & Forex",
+    "question": "Can IFSC Banking Units provide trade finance and factoring services?",
+    "answer": "Yes, IBUs can offer comprehensive trade financing, buyers/suppliers credit, discounting of export/import bills, and participate in international factoring platforms like ITFS (International Trade Financing Services).",
+    "source": "IFSCA Framework for International Trade Financing Services (ITFS)",
+    "keywords": [
+      "trade finance",
+      "factoring",
+      "ITFS",
+      "buyers credit",
+      "letters of credit",
+      "bill discounting"
+    ]
+  },
+  {
+    "id": 21,
+    "category": "Fintech & Innovation",
+    "question": "What is the IFSCA Regulatory Sandbox framework for Fintech companies?",
+    "answer": "The IFSCA Fintech Regulatory Sandbox allows eligible Indian and global tech startups to live-test innovative financial products, services, or algorithms with real customers under relaxed regulatory conditions for an initial testing cohort of up to 12 months.",
+    "source": "IFSCA (Fintech Incentive) Scheme, 2022 & Framework for Regulatory Sandbox",
+    "keywords": [
+      "regulatory sandbox",
+      "fintech",
+      "innovation",
+      "testing",
+      "startup",
+      "sandbox license"
+    ]
+  },
+  {
+    "id": 22,
+    "category": "Fintech & Innovation",
+    "question": "Are grant incentives available for Fintech entities setting up in GIFT City?",
+    "answer": "Yes. Under the IFSCA Fintech Incentive Scheme 2022, eligible fintech entities can receive proof-of-concept grants (up to INR 15 Lakhs), sandbox deployment grants (up to INR 25 Lakhs), green fintech grants (up to INR 75 Lakhs), and listing incentives (up to INR 50 Lakhs).",
+    "source": "IFSCA Fintech Incentive Scheme Notification 2022",
+    "keywords": [
+      "fintech grant",
+      "incentive scheme",
+      "funding",
+      "financial assistance",
+      "subsidies"
+    ]
+  },
+  {
+    "id": 23,
+    "category": "Fintech & Innovation",
+    "question": "What is the Innovation Sandbox in GIFT City IFSC?",
+    "answer": "The Innovation Sandbox is an isolated digital environment containing synthetic market and banking data provided by market infrastructure institutions (MIIs) to test fintech solutions before applying for the live Regulatory Sandbox.",
+    "source": "IFSCA Framework for Innovation Sandbox",
+    "keywords": [
+      "innovation sandbox",
+      "synthetic data",
+      "pre-testing",
+      "fintech testing environment"
+    ]
+  },
+  {
+    "id": 24,
+    "category": "Fintech & Innovation",
+    "question": "Can foreign companies list Depository Receipts or equity shares on GIFT IFSC exchanges?",
+    "answer": "Yes. The IFSCA (Issuance and Listing of Securities) Regulations, 2021 permit eligible foreign companies, Indian companies, and REITs/InvITs to list equity shares, depository receipts, and green bonds directly on IFSC exchanges.",
+    "source": "IFSCA (Issuance and Listing of Securities) Regulations, 2021",
+    "keywords": [
+      "listing",
+      "depository receipts",
+      "IPO",
+      "stock exchange listing",
+      "bonds",
+      "equity"
+    ]
+  },
+  {
+    "id": 25,
+    "category": "Fintech & Innovation",
+    "question": "What are the rules regarding data hosting and cloud compliance for entities in GIFT IFSC?",
+    "answer": "Regulated entities may use cloud service providers provided they adhere to the IFSCA Cyber Security and Cyber Resilience Framework, ensuring data sovereignty, continuous audit trails, encryption at rest/in transit, and annual third-party vulnerability assessments (VAPT).",
+    "source": "IFSCA Cyber Security and Cyber Resilience Framework Guidelines",
+    "keywords": [
+      "data hosting",
+      "cloud compliance",
+      "cyber security",
+      "VAPT",
+      "data privacy"
+    ]
+  }
+]

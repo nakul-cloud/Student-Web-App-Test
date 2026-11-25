@@ -1,0 +1,7 @@
+{
+  "gibberish": "I couldn't understand your input — it looks like random characters or incomplete text. Please type a clear compliance question (for example: *\"What is the Section 80LA tax holiday in GIFT City?\"*).",
+  "guardrail_blocked": "I am **ComplyADI** ({company_name}), a dedicated {jurisdiction} regulatory & compliance assistant. I can only answer questions related to **compliance, IFSCA regulations, tax (GST, TDS, 80LA), AML/KYC, IBU/FME licensing, and uploaded policy documents**. For other topics, I'm unable to assist.",
+  "smalltalk": "Hello! I am **ComplyADI**, your official {jurisdiction} Compliance & Regulatory Assistant by {company_name}. I can answer queries regarding Doing Business in GIFT City, Tax Holidays (80LA), Direct Listing Frameworks, IFSC Banking Units (IBU), Fund Management Entities (FME), and IFSCA guidelines. How can I assist you today?",
+  "clarification": "Could you please specify your compliance question in more detail? For example, you can ask about:\n• Tax incentives and Section 80LA holiday\n• Doing Business in GIFT City infrastructure & business platforms\n• Direct Listing regulations on IFSC exchanges\n• IBU or FME minimum capital and licensing",
+  "fallback": "I don't have information on this specific topic in my current {jurisdiction} compliance database. To avoid non-compliance or penalties, we strongly recommend consulting an IFSCA-registered compliance expert or visiting the official portal at https://ifsca.gov.in."
+}
