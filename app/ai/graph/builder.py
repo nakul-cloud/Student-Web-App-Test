@@ -20,14 +20,15 @@ def route_intent(state: ComplianceState) -> str:
 
 def route_retrieval(state: ComplianceState) -> str:
     faqs = state.get("retrieved_faqs", [])
-    if not faqs:
+    best_score = state.get("best_match_score", 0.0)
+    if not faqs or best_score < settings.retrieval_min_threshold:
         return "fallback"
 
     top_source = str(faqs[0].get("source") or "").lower()
-    is_pdf_chunk = ".pdf" in top_source or (faqs[0].get("id") or 0) > 100
+    is_pdf_chunk = ".pdf" in top_source
 
-    # Only curated seed FAQs can bypass LLM via direct_return; raw PDF chunks always go to LLM synthesizer
-    if not is_pdf_chunk and state.get("best_match_score", 0.0) >= settings.direct_hit_threshold:
+    # Only curated FAQs bypass LLM via direct_return; PDF chunks always route through synthesizer
+    if not is_pdf_chunk and best_score >= settings.direct_hit_threshold:
         return "direct_return"
 
     return "synthesizer"

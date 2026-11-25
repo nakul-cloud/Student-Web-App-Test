@@ -115,18 +115,23 @@ async def qdrant_retrieval_node(state: ComplianceState) -> Dict[str, Any]:
             with_payload=True,
         )
 
+        # De-weight common domain words from settings so specific terms win ranking
+        generic_terms = set(settings.generic_compliance_terms)
+        specific_words = [w for w in words if w not in generic_terms] or words
+
         for point in scroll_res:
             p = point.payload or {}
             combined = (p.get("question", "") + " " + p.get("keywords", "") + " " + p.get("answer", "")).lower()
-            overlap = sum(1 for w in words if w in combined)
-            score = round(overlap / max(len(words), 1), 2)
+            specific_hits = sum(1 for w in specific_words if w in combined)
+            total_hits = sum(1 for w in words if w in combined)
+            score = round((specific_hits * 1.5 + total_hits * 0.5) / max(len(specific_words) * 1.5 + len(words) * 0.5, 1), 2)
             matched_faqs.append({
                 "id": p.get("id"),
                 "category": p.get("category"),
                 "question": p.get("question"),
                 "answer": p.get("answer"),
                 "source": p.get("source"),
-                "score": score,
+                "score": min(score, 1.0),
             })
 
         matched_faqs.sort(key=lambda x: x["score"], reverse=True)
@@ -180,10 +185,12 @@ async def answer_synthesizer_node(state: ComplianceState) -> Dict[str, Any]:
 
     try:
         reply_content = await invoke_with_fallback(messages)
+        lower_reply = reply_content.strip().lower()
+        is_refusal = any(lower_reply.startswith(p) for p in settings.refusal_prefixes)
         return {
             "reply": reply_content,
-            "source_citation": _build_citation(top_faq),
-            "category": top_faq["category"],
+            "source_citation": None if is_refusal else _build_citation(top_faq),
+            "category": "Unknown" if is_refusal else top_faq["category"],
             "is_direct_hit": False,
             "error": False,
         }

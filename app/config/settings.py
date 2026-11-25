@@ -52,6 +52,16 @@ class Settings(BaseSettings):
         "today date", "todays date", "today's date", "current time", "birthday",
         "celebrity", "actor", "actress", "cooking", "gaming", "astrology",
     ]
+    offtopic_patterns: list[str] = [
+        r"\b(today'?s?|current|present)\s+(date|time|day|year)\b",
+        r"\bwhat\s+(is\s+)?(the\s+)?(today|date|time|day)\b",
+        r"\bwhat\s+day\s+is\s+(it|today)\b",
+        r"\bcalculate\s+[\d\+\-\*\/]+",
+        r"\bwho\s+(is|was)\s+(the\s+)?(president|prime\s+minister|king|queen|ceo\s+of\s+google)\b",
+    ]
+    refusal_prefixes: list[str] = [
+        "i'm sorry", "i’m sorry", "i don't have", "i don’t have", "unable to assist",
+    ]
 
     # Smalltalk / Conversational Vocabulary (handled locally at 0 LLM token cost)
     smalltalk_vocab: list[str] = [
@@ -78,8 +88,10 @@ class Settings(BaseSettings):
         "that", "this", "tell", "about", "your", "some", "more", "and", "the", "for",
     ]
     short_compliance_terms: list[str] = ["tax", "ibu", "fme", "gst", "kyc", "aml", "sez", "ifsc", "ifsca", "mat", "tds"]
-    retrieval_scan_limit: int = 8
+    generic_compliance_terms: list[str] = ["ifsc", "gift", "city", "india", "unit", "units", "rules", "guidelines", "under"]
+    retrieval_scan_limit: int = 200
     retrieval_top_k: int = 3
+    retrieval_min_threshold: float = 0.25
     direct_hit_threshold: float = 0.75
     llm_history_window: int = 4
 
