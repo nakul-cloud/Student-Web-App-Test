@@ -38,30 +38,20 @@ async def seed_qdrant_faqs() -> int:
             vectors_config={},  # Vectorless: no dense vector storage
         )
 
-        # Create full-text payload indexes on question and keywords for fast search
-        await client.create_payload_index(
-            collection_name=collection_name,
-            field_name="question",
-            field_schema=TextIndexParams(
-                type="text",
-                tokenizer=TokenizerType.WORD,
-                min_token_len=2,
-                max_token_len=20,
-                lowercase=True,
+        # Create full-text payload indexes on question, keywords, and answer
+        for field_name in ("question", "keywords", "answer"):
+            await client.create_payload_index(
+                collection_name=collection_name,
+                field_name=field_name,
+                field_schema=TextIndexParams(
+                    type="text",
+                    tokenizer=TokenizerType.WORD,
+                    min_token_len=2,
+                    max_token_len=20,
+                    lowercase=True,
+                ),
             )
-        )
-        await client.create_payload_index(
-            collection_name=collection_name,
-            field_name="keywords",
-            field_schema=TextIndexParams(
-                type="text",
-                tokenizer=TokenizerType.WORD,
-                min_token_len=2,
-                max_token_len=20,
-                lowercase=True,
-            )
-        )
-        logger.info(f"[Qdrant Seeding] Created full-text payload indices on 'question' and 'keywords'")
+        logger.info("[Qdrant Seeding] Created full-text payload indices on 'question', 'keywords', and 'answer'")
 
     # Upsert points with payload only (id + metadata, vectors={})
     points = [

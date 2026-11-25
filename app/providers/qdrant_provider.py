@@ -9,7 +9,10 @@ def get_qdrant_client() -> AsyncQdrantClient:
     """Singleton AsyncQdrantClient."""
     global _qdrant_client
     if _qdrant_client is None:
-        _qdrant_client = AsyncQdrantClient(url=settings.qdrant_url)
+        _qdrant_client = AsyncQdrantClient(
+            url=settings.qdrant_url,
+            api_key=settings.qdrant_api_key or None,
+        )
         logger.info(f"[Qdrant] Initialized AsyncQdrantClient at {settings.qdrant_url}")
     return _qdrant_client
 

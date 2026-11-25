@@ -5,6 +5,7 @@ from fastapi import FastAPI, Request
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.middleware.gzip import GZipMiddleware
+from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
@@ -108,13 +109,9 @@ app.include_router(api_router, prefix="/api/v1")
 # Mount Modular Frontend Static Assets
 _FRONTEND_DIR = Path(__file__).resolve().parent.parent / "frontend"
 if _FRONTEND_DIR.exists():
-    app.mount("/frontend", StaticFiles(directory=str(_FRONTEND_DIR)), name="frontend")
+    app.mount("/frontend", StaticFiles(directory=str(_FRONTEND_DIR), html=True), name="frontend")
 
 
 @app.get("/", include_in_schema=False)
 async def root():
-    return {
-        "service": "ComplyADI - GIFT City Compliance Assistant",
-        "chat_ui": "/api/v1/chatbot/",
-        "api_docs": "/docs",
-    }
+    return RedirectResponse(url="/frontend/index.html#/login", status_code=302)

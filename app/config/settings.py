@@ -27,6 +27,7 @@ class Settings(BaseSettings):
     # Qdrant
     qdrant_url: str = "http://localhost:6333"
     qdrant_collection: str = "gift_city_compliance"
+    qdrant_api_key: str = ""
 
     # Groq Provider
     groq_api_key: str = ""

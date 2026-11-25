@@ -7,6 +7,9 @@
 .env
 .env.*
 !.env.example
+.neon
+.neon/
+.neon.*
 *.pem
 *.key
 *.cert

@@ -16,7 +16,7 @@ router = APIRouter(prefix="/chatbot", tags=["Chatbot"])
 @router.get("/", include_in_schema=False)
 async def serve_chat_ui() -> RedirectResponse:
     """Redirect to the modular React frontend."""
-    return RedirectResponse(url="/frontend/", status_code=302)
+    return RedirectResponse(url="/frontend/index.html#/login", status_code=302)
 
 
 @router.post("/chat", response_model=ChatResponse)
