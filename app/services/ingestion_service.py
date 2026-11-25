@@ -31,7 +31,12 @@ async def seed_qdrant_faqs() -> int:
     collections_res = await client.get_collections()
     existing_collections = [c.name for c in collections_res.collections]
 
-    if collection_name not in existing_collections:
+    if collection_name in existing_collections:
+        count_res = await client.count(collection_name=collection_name)
+        if count_res.count >= len(faqs):
+            logger.info(f"[Qdrant Seeding] Collection '{collection_name}' already has {count_res.count} docs. Skipping re-seed.")
+            return count_res.count
+    else:
         logger.info(f"[Qdrant Seeding] Creating vectorless collection '{collection_name}' (zero vector dimension)")
         await client.create_collection(
             collection_name=collection_name,

@@ -1,16 +1,25 @@
+import os
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
 from sqlalchemy.orm import declarative_base
+from sqlalchemy.pool import NullPool
 
 from app.config.settings import settings
 from app.utils.logger import logger
 
-engine = create_async_engine(
-    settings.database_url,
-    echo=(settings.env == "development"),
-    pool_size=10,
-    max_overflow=20,
-    pool_pre_ping=True,
-)
+if os.environ.get("VERCEL"):
+    engine = create_async_engine(
+        settings.database_url,
+        echo=(settings.env == "development"),
+        poolclass=NullPool,
+    )
+else:
+    engine = create_async_engine(
+        settings.database_url,
+        echo=(settings.env == "development"),
+        pool_size=10,
+        max_overflow=20,
+        pool_pre_ping=True,
+    )
 
 AsyncSessionLocal = async_sessionmaker(
     bind=engine,
